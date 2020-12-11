@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.sandwiches.SandwichFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sandwichtitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/sandwichMainlayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandwichHomeBtn"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cheeseBurgerBtn"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cheeseburgersandwich" />
+
+            <ImageButton
+                android:id="@+id/doubleRitzBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/doubleritzsandwich" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/fishBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/fishsandwich" />
+
+            <ImageButton
+                android:id="@+id/chickenBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/chickengrillsandwich" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/pbjBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pbjsandwich" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cheeseBurgerSand"
+        android:layout_width="412dp"
+        android:layout_height="690dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandwichHomeBtn">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cheeseburgersandwich" />
+
+        <Button
+            android:id="@+id/burgerSandOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/doubleRitzSand"
+        android:layout_width="408dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandwichHomeBtn">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/doubleritzsandwich" />
+        <Button
+            android:id="@+id/doubleRitzSandOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fishSand"
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandwichHomeBtn">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fishsandwich" />
+
+        <Button
+            android:id="@+id/fishSandOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chickenSand"
+        android:layout_width="413dp"
+        android:layout_height="727dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandwichHomeBtn">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chickengrillsandwich" />
+
+        <Button
+            android:id="@+id/chickenSandOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pbjSand"
+        android:layout_width="412dp"
+        android:layout_height="733dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandwichHomeBtn">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pbjsandwich" />
+
+        <Button
+            android:id="@+id/pbjSandOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/sandwichHomeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Sandwich"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <LinearLayout
+        android:id="@+id/burgerToppingsLay"
+        android:layout_width="412dp"
+        android:layout_height="342dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <CheckBox
+            android:id="@+id/cheeseCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Cheese" />
+
+        <CheckBox
+            android:id="@+id/tomatoeCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Tomatoes" />
+
+        <CheckBox
+            android:id="@+id/baconCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Bacon" />
+
+        <CheckBox
+            android:id="@+id/mayoCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Mayonnaise" />
+
+        <CheckBox
+            android:id="@+id/ketchupCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Ketchup" />
+
+        <CheckBox
+            android:id="@+id/mustardCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Mustard" />
+
+        <CheckBox
+            android:id="@+id/picklesCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Pickles" />
+
+        <CheckBox
+            android:id="@+id/onionsCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Onions" />
+
+        <CheckBox
+            android:id="@+id/lettuceCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Lettuce" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

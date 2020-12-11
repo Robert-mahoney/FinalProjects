@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.combos.ComboFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/combotitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/comboMainlayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comboHomeBtn"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/singleRitzBtn"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/singleritzcombo" />
+
+            <ImageButton
+                android:id="@+id/doubleRitzBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/doubleritzcombo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/hotdogBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/hotdogcombo" />
+
+            <ImageButton
+                android:id="@+id/chickenBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/chickencombo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/coolDealBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/cooldealcombo" />
+
+            <ImageButton
+                android:id="@+id/itzyRitzyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/itzyritzycombo" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/singleRitzCombo"
+        android:layout_width="411dp"
+        android:layout_height="697dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comboHomeBtn">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/singleritzcombo" />
+
+        <Button
+            android:id="@+id/singleRitzComboOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/doubleRitzCombo"
+        android:layout_width="408dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comboHomeBtn">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/doubleritzcombo" />
+
+        <Button
+            android:id="@+id/doubleRitzComboOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hotdogCombo"
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comboHomeBtn">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hotdogcombo" />
+
+        <Button
+            android:id="@+id/hotdogComboOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chickenCombo"
+        android:layout_width="413dp"
+        android:layout_height="727dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comboHomeBtn">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chickencombo" />
+
+        <Button
+            android:id="@+id/chickenComboOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/coolDealCombo"
+        android:layout_width="412dp"
+        android:layout_height="733dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comboHomeBtn">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cooldealcombo" />
+
+        <Button
+            android:id="@+id/coolDealComboOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/itzyRitzyCombo"
+        android:layout_width="409dp"
+        android:layout_height="723dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comboHomeBtn">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/itzyritzycombo" />
+
+        <Button
+            android:id="@+id/itzyRitzyComboOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/comboHomeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Combo"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <LinearLayout
+        android:id="@+id/burgerToppingsLay"
+        android:layout_width="417dp"
+        android:layout_height="348dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <CheckBox
+            android:id="@+id/cheeseCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Cheese" />
+
+        <CheckBox
+            android:id="@+id/tomatoesCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Tomatoes" />
+
+        <CheckBox
+            android:id="@+id/baconCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Bacon" />
+
+        <CheckBox
+            android:id="@+id/mayoCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Mayonnaise" />
+
+        <CheckBox
+            android:id="@+id/ketchupCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Ketchup" />
+
+        <CheckBox
+            android:id="@+id/mustardCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Mustard" />
+
+        <CheckBox
+            android:id="@+id/picklesCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Pickles" />
+
+        <CheckBox
+            android:id="@+id/onionsCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Onions" />
+
+        <CheckBox
+            android:id="@+id/lettuceCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Lettuce" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hotdogToppingsLay"
+        android:layout_width="410dp"
+        android:layout_height="360dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <CheckBox
+            android:id="@+id/ketchupCheckHD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Ketchup" />
+
+        <CheckBox
+            android:id="@+id/mustardCheckHD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Mustard" />
+
+        <CheckBox
+            android:id="@+id/relishCheckHD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Relish" />
+
+        <CheckBox
+            android:id="@+id/onionCheckHD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Onions" />
+
+        <CheckBox
+            android:id="@+id/sauerkrautCheckHD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Sauerkraut" />
+
+        <CheckBox
+            android:id="@+id/chiliCheckHD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Chili" />
+
+        <CheckBox
+            android:id="@+id/cheeseCheckHD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Cheese" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

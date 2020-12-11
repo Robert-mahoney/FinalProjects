@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.sandwiches.SandwichFragment">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/checkouttitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <TextView
+        android:id="@+id/orderOutput"
+        android:layout_width="370dp"
+        android:layout_height="171dp"
+        android:scrollbars="vertical"
+        android:text="Order:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <TextView
+        android:id="@+id/costOutput"
+        android:layout_width="363dp"
+        android:layout_height="30dp"
+        android:text="Cost: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderOutput"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <Button
+        android:id="@+id/checkoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costOutput"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <Button
+        android:id="@+id/editOrderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Order"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkoutBtn"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <LinearLayout
+        android:id="@+id/placeOrderLay"
+        android:layout_width="411dp"
+        android:layout_height="188dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkoutBtn">
+
+        <EditText
+            android:id="@+id/creditNum"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Credit Card Number">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/creditDate"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Expiration Date">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/creditCVV"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter the CVV">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/placeOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Order" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editItemsLay"
+        android:layout_width="394dp"
+        android:layout_height="195dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:text="Enter the Number of the item to remove" />
+
+        <EditText
+            android:id="@+id/removeItemNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/removeItemBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_weight="1"
+            android:text="Remove Item" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_weight="1"
+            android:text="Back" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

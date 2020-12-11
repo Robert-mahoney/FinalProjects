@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+
+        <item
+            android:id="@+id/nav_hotdogs"
+            android:icon="@drawable/ic_menu_hotdogs"
+            android:title="@string/menu_hotdogs" />
+
+        <item
+            android:id="@+id/nav_chili"
+            android:icon="@drawable/ic_menu_chili"
+            android:title="@string/menu_chili" />
+
+        <item
+            android:id="@+id/nav_specialties"
+            android:icon="@drawable/ic_menu_specialties"
+            android:title="@string/menu_specialties" />
+
+        <item
+            android:id="@+id/nav_salads"
+            android:icon="@drawable/ic_menu_salads"
+            android:title="@string/menu_salads" />
+
+        <item
+            android:id="@+id/nav_icecream"
+            android:icon="@drawable/ic_menu_icecream"
+            android:title="@string/menu_icecream" />
+
+        <item
+            android:id="@+id/nav_checkout"
+            android:icon="@drawable/ic_menu_checkout"
+            android:title="@string/menu_checkout" />
+
+    </group>
+</menu>

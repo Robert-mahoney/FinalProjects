@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout tools:context=".MainActivity" android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    ​
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="1">
+    ​
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="FirstName" android:id="@+id/lblFirstName"/>
+    ​
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/txtFirstName" android:inputType="textPersonName" android:hint="First Name" android:ems="10"/>
+    ​
+</LinearLayout>
+    ​
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="1">
+    ​
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="LastName" android:id="@+id/lblLastName"/>
+    ​
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/txtLastName" android:inputType="textPersonName" android:hint="Last Name" android:ems="10"/>
+    ​
+</LinearLayout>
+    ​
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="1">
+    ​
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="CityName" android:id="@+id/lblCity"/>
+    ​
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/txtCity" android:inputType="textPersonName" android:hint="City Name" android:ems="10"/>
+    ​
+</LinearLayout>
+    ​
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="1">
+    ​
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="SchoolName" android:id="@+id/lblSchool"/>
+    ​
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/txtSchool" android:inputType="textPersonName" android:hint="School Name" android:ems="10"/>
+    ​
+</LinearLayout>
+    ​
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="1">
+    ​
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="BrotherName" android:id="@+id/lblBrother"/>
+    ​
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/txtBrother" android:inputType="textPersonName" android:hint="Brother Name" android:ems="10"/>
+    ​
+</LinearLayout>
+    ​
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="1">
+    ​
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="SisterName" android:id="@+id/lblSister"/>
+    ​
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/txtSister" android:inputType="textPersonName" android:hint="Sister Name" android:ems="10"/>
+    ​
+</LinearLayout>
+    ​
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="Submit" android:id="@+id/btnSubmit"/>
+    ​
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/txtOutput" android:hint="output"/>
+    ​​
+</LinearLayout>

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=GuessWho
+comment0.text=\r\n\ Test\r\n\ \r\n\ @author\ 2020\ CSA\r\n\ @version\ 20201123\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=character
+comment2.target=void\ populateChar(java.util.List)
+numComments=3

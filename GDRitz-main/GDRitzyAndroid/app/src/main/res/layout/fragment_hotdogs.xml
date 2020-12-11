@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.hotdogs.HotdogsFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hotdogtitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/hotdogMainlayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotdogHomeBtn"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/americanDogBtn"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hotdog" />
+
+            <ImageButton
+                android:id="@+id/coneyDogBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/coneydog" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/americanDogHD"
+        android:layout_width="412dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotdogHomeBtn">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hotdog" />
+
+        <Button
+            android:id="@+id/hotdogOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/coneyDogHD"
+        android:layout_width="408dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotdogHomeBtn">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coneydog" />
+
+        <Button
+            android:id="@+id/coneyDogOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/hotdogHomeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hot Dog Home"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <LinearLayout
+        android:id="@+id/hotdogToppingLay"
+        android:layout_width="413dp"
+        android:layout_height="325dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <CheckBox
+            android:id="@+id/ketchupCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Ketchup" />
+
+        <CheckBox
+            android:id="@+id/mustardCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Mustard" />
+
+        <CheckBox
+            android:id="@+id/relishCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Relish" />
+
+        <CheckBox
+            android:id="@+id/onionCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Onions" />
+
+        <CheckBox
+            android:id="@+id/sauerkrautCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Sauerkraut" />
+
+        <CheckBox
+            android:id="@+id/chiliCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Chili" />
+
+        <CheckBox
+            android:id="@+id/cheeseCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Cheese" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
