@@ -71,7 +71,7 @@ public class BoardP2
         else{
           returnVal += tile.getHidden();
         }
-        returnVal+= ("\t");
+        returnVal+= ("\t | ");
       }
       returnVal+= ("\n");
     }

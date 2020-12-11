@@ -69,8 +69,8 @@ public class Game
         //keeps running until someone wins
       while(won==false){
         //User can put in a parameter or guess the character
-        System.out.println("Guess a parameter(in lower case) ex.'dark side' or enter 'guess' to guess character name.");
-        String guess = in.nextLine();
+        System.out.println("Guess a parameter (Type 'help' to get them) or enter 'guess' to guess character name.");
+        String guess = in.nextLine().toLowerCase();
         if (guess.equals("guess")){
           System.out.println("Enter character name:");
           guess = in.nextLine();
@@ -81,6 +81,12 @@ public class Game
           else{
             System.out.println("Incorrect!");
           }
+        }
+        else if (guess.equals("help")){
+          for(String s : questions){
+            System.out.print(" "+s+", ");
+          }
+          wait(5);
         }
         else{
           //finds if parameter entered matches that of the CPU character
@@ -151,8 +157,21 @@ public class Game
         displayBoard();
         //Player 1 turn prints their board and lets them enter parameters
         System.out.println("Player 1's turn");
-        System.out.println("Player 1: guess a parameter(in lower case) or enter 'guess' to guess character name.");
-        String guessWho = in.nextLine();
+        System.out.println("Player 1: guess a parameter (Type 'help' to get them) or enter 'guess' to guess character name.");
+        String guessWho = in.nextLine().toLowerCase();
+        while(guessWho.equals("help")){
+          for(String s : questions){
+            System.out.print(" "+s+", ");
+            
+          }
+          wait(5);
+          displayBoard();
+        //Player 1 turn prints their board and lets them enter parameters
+        System.out.println("Player 1's turn");
+        System.out.println("Player 1: guess a parameter (Type 'help' to get them) or enter 'guess' to guess character name.");
+        guessWho = in.nextLine().toLowerCase();
+        }
+        
         if (guessWho.equals("guess")){
           System.out.println("Enter character name:");
           guessWho = in.nextLine();
@@ -164,6 +183,7 @@ public class Game
             System.out.println("Incorrect!");
           }
         }
+        
         else{
           boolean contains=false;
           for(Characters c: character){
@@ -186,8 +206,20 @@ public class Game
         //Player 2 turn prints their board and lets them enter parameters
         displayBoardP2();
         System.out.println("Player 2's turn");
-        System.out.println("Player 2: guess a parameter(in lower case) or enter 'guess' to guess character name.");
+        System.out.println("Player 2: guess a parameter (Type 'help' to get them) or enter 'guess' to guess character name.");
         String guessWho2 = in.nextLine();
+        while(guessWho2.equals("help")){
+          for(String s : questions){
+            System.out.print(" "+s+", ");
+            
+          }
+          wait(5);
+          displayBoardP2();
+          System.out.println("Player 2's turn");
+        System.out.println("Player 2: guess a parameter (Type 'help' to get them) or enter 'guess' to guess character name.");
+        guessWho2 = in.nextLine().toLowerCase();
+          
+        }
         if (guessWho2.equals("guess")){
           System.out.println("Enter character name:");
           guessWho2 = in.nextLine();
@@ -199,6 +231,7 @@ public class Game
             System.out.println("Incorrect!");
           }
         }
+        
         else{
           boolean contains=false;
           for(Characters c: character){
@@ -344,6 +377,7 @@ public class Game
     public void yesOrNo(String guess, boolean contains, List<Characters> character){
     if(contains==true){
       System.out.println("The character has this trait!");
+      wait(2);
       for(Characters c: character){
             if(!(c.getDesc().contains(guess))){
               //System.out.println(c.getName());
@@ -354,6 +388,7 @@ public class Game
     }
     else{
       System.out.println("The character does not have this trait!");
+      wait(2);
       for(Characters c: character){
             if(c.getDesc().contains(guess)){
               //System.out.println(c.getName());
@@ -367,6 +402,7 @@ public class Game
     public void yesOrNo2(String guess, boolean contains, List<Characters> character){
     if(contains==true){
       System.out.println("The character has this trait!");
+      wait(2);
       for(Characters c: character){
             if(!(c.getDesc().contains(guess))){
               //System.out.println(c.getName());
@@ -377,6 +413,7 @@ public class Game
     }
     else{
       System.out.println("The character does not have this trait!");
+      wait(2);
       for(Characters c: character){
             if(c.getDesc().contains(guess)){
               //System.out.println(c.getName());
